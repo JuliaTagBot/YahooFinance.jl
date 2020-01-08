@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Examples · YahooFinance.jl</title><link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="../assets/documenter.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link href="../assets/documenter.css" rel="stylesheet" type="text/css"/><link href="../assets/style.css" rel="stylesheet" type="text/css"/></head><body><nav class="toc"><a href="../"><img class="logo" src="../assets/logo.png" alt="YahooFinance.jl logo"/></a><h1>YahooFinance.jl</h1><select id="version-selector" onChange="window.location.href=this.value" style="visibility: hidden"></select><form class="search" id="search-form" action="../search/"><input id="search-query" name="q" type="text" placeholder="Search docs"/></form><ul><li><a class="toctext" href="../">Home</a></li></ul></nav><article id="docs"><header><nav><ul><li><a href>Examples</a></li></ul><a class="edit-page" href="https://github.com/markushhh/YahooFinance.jl/blob/master/docs/src/examples.md"><span class="fa"></span> Edit on GitHub</a></nav><hr/><div id="topbar"><span>Examples</span><a class="fa fa-bars" href="#"></a></div></header><h1><a class="nav-anchor" id="Examples-1" href="#Examples-1">Examples</a></h1><p>At first set up the environment and load an example dataset.</p><pre><code class="language-julia">using YahooFinance
+
+x = get_symbols(&quot;GOOG&quot;, &quot;2018-12-13&quot;, &quot;2019-06-29&quot;)</code></pre><pre><code class="language-none">136×5 TimeSeries.TimeArray{Any,2,Dates.Date,Array{Any,2}} 2018-12-13 to 2019-06-28
+│            │ Close   │ High    │ Low       │ Open      │ Volume  │
+├────────────┼─────────┼─────────┼───────────┼───────────┼─────────┤
+│ 2018-12-13 │ 1061.9  │ 1079.76 │ 1053.9301 │ 1068.0699 │ 1329800 │
+│ 2018-12-14 │ 1042.1  │ 1062.6  │ 1040.79   │ 1049.98   │ 1686600 │
+│ 2018-12-17 │ 1016.53 │ 1053.15 │ 1007.9    │ 1037.51   │ 2385400 │
+│ 2018-12-18 │ 1028.71 │ 1049.48 │ 1021.44   │ 1026.09   │ 2192500 │
+│ 2018-12-19 │ 1023.01 │ 1062.0  │ 1008.05   │ 1033.99   │ 2479300 │
+│ 2018-12-20 │ 1009.41 │ 1034.22 │ 996.36    │ 1018.13   │ 2673500 │
+│ 2018-12-21 │ 979.54  │ 1024.02 │ 973.69    │ 1015.3    │ 4596000 │
+│ 2018-12-24 │ 976.22  │ 1003.54 │ 970.11    │ 973.9     │ 1590300 │
+│ 2018-12-26 │ 1039.46 │ 1040.0  │ 983.0     │ 989.01    │ 2373300 │
+   ⋮
+│ 2019-06-19 │ 1102.33 │ 1107.0  │ 1093.48   │ 1105.6    │ 1338800 │
+│ 2019-06-20 │ 1111.42 │ 1120.12 │ 1104.74   │ 1119.99   │ 1262000 │
+│ 2019-06-21 │ 1121.88 │ 1124.11 │ 1108.08   │ 1109.24   │ 1930100 │
+│ 2019-06-24 │ 1115.52 │ 1122.0  │ 1111.01   │ 1119.61   │ 1395600 │
+│ 2019-06-25 │ 1086.35 │ 1114.35 │ 1083.8    │ 1112.66   │ 1546900 │
+│ 2019-06-26 │ 1079.8  │ 1092.97 │ 1072.24   │ 1086.5    │ 1810900 │
+│ 2019-06-27 │ 1076.01 │ 1087.1  │ 1075.29   │ 1084.0    │ 1004300 │
+│ 2019-06-28 │ 1080.91 │ 1081.0  │ 1073.37   │ 1076.39   │ 1693200 │</code></pre><footer><hr/></footer></article></body></html>
