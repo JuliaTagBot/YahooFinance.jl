@@ -1,7 +1,7 @@
 name = "YahooFinance"
 uuid = "71b753c1-733f-4418-b8b2-c1bb484780f7"
 authors = ["markushhh <markushhh.jl@gmail.com>"]
-version = "0.2.1"
+version = "0.2.2"
 
 [deps]
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
