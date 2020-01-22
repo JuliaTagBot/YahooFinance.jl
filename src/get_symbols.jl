@@ -23,7 +23,7 @@ function get_symbols(symbol::String, from::String, to::String)
 
     from = string(Integer(datetime2unix(DateTime(from * "T12:00:00"))))
     to = string(Integer(datetime2unix(DateTime(to * "T12:00:00"))))
-    from > to ? error("in get_symbols: to must be older than from") : nothing
+    parse(Int, from) > parse(Int, to) ? error("in get_symbols: to must be older than from") : nothing
 
     url = "https://query1.finance.yahoo.com/v7/finance/chart/$symbol?&interval=1d&period1=$from&period2=$to"
 
