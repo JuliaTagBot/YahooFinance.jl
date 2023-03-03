@@ -41,7 +41,7 @@ function get_symbols(symbol::String, from::String, to::String)
         Time = Dates.Date.(unix2datetime.(body["timestamp"]))
     )
 
-    deleterows!(x, isnothing.(x).Close)
+    deleteat!(x, isnothing.(x).Close)
     x = TimeArray(x, timestamp = :Time)
 
     return(x)
